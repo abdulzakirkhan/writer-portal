@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer's Portal</title>
+    <link href="assets/style/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Material Icons CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <aside id="sidebar" class=" white-bg">
+        <div class="sidebar-header p-3">
+            <h3 class="text-center">
+                <a href="/index.html" class="">
+                    <img src="./assets/images/logo.png" width="87" height="32" class="img-fluid" alt="">
+                </a>
+            </h3>
+        </div>
+        <div class="input-container px-3 position-relative py-4">
+            <input class="form-control py-2" type="text" placeholder="Search" aria-label=".form-control-lg example">
+            <img src="./assets/images/icons/search.png" width="17" height="17" alt="" class="position-absolute top-3">
+        </div>
+        
+        <ul class="list-unstyled components">
+            <div class="py-3 px-3">
+                <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2 active">
+                    <img src="./assets/images/icons/dashboard-active.png" width="24" height="24" class="img-fluid" alt="">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+            <div class="px-2">
+                <h3 class="body2 textt-primary fw-bold">GENERAL</h3>
+            </div>
+            <div class="px-3">
+                <div class="dropdown">
+                    <button class="btn d-flex align-items-center border-0 gap-4 text-dark py-2 dropdown-toggle" 
+                            type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/images/icons/orders.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>Orders</span>
+                        <img src="./assets/images/icons/Enabled.png" width="20" height="20" class="dropdown-arrow" alt="">
+                    </button>
+                    <ul class="dropdown-menu h px-4 border-0 bg-transparent" aria-labelledby="dropdownMenuButton">
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="my-orders.html">
+                                <img src="./assets/images/icons/my-orders.png" width="18" height="22" alt="">
+                                <span>My Orders</span>
+                            </a>
+                        </li>
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
+                                <img src="./assets/images/icons/assigned.png" width="24" height="24" alt="">
+                                <span>Assigned</span>
+                            </a>
+                        </li>
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
+                                <img src="./assets/images/icons/awarded.png" width="24" height="24" alt="">
+                                <span>Awarded</span>
+                            </a>
+                        </li>
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
+                                <img src="./assets/images/icons/rejected.png" width="24" height="24" alt="">
+                                <span>Rejected</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="px-3">
+                <li>
+                    <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                        <img src="./assets/images/icons/t.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>Check Plagrism</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                        <img src="./assets/images/icons/file-content.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>Add File Content</span>
+                    </a>
+                </li>
+                <div class=" border-bottom">
+                    <li>
+                        <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                            <img src="./assets/images/icons/social-account.png" width="24" height="24" class="img-fluid" alt="">
+                            <span>Add Social Account</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+           
+            <div class="px-3 mt-4">
+                <h3 class="body2 textt-primary fw-bold">UTILITIES</h3>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/my-orders.png" width="18" height="22" alt="">
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <div class="overflow-hidden">
+                    <div class="dropdown px-0 position-relative">
+                        <button class="btn d-flex align-items-center border-0 gap-4 px-2 text-dark py-2 dropdown-toggle" 
+                                type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/icons/productivity.png" width="24" height="24" class="img-fluid" alt="">
+                            <span>Productivity</span>
+                            <img src="./assets/images/icons/Enabled.png" width="20" height="20" class="dropdown-arrow" alt="">
+                        </button>
+                        <ul class="dropdown-menu d-custom px-4 border-0 bg-transparent" aria-labelledby="dropdownMenuButton2">
+                            <li class="m-0 py-0">
+                                <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                                    <img src="./assets/images/icons/hourse.png" width="24" height="24" alt="">
+                                    <span>Hours</span>
+                                </a>
+                            </li>
+                            <li class="m-0 py-0">
+                                <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
+                                    <img src="./assets/images/icons/writer.png" width="24" height="24" alt="">
+                                    <span>Writer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <li class="border-bottom">
+                    <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                        <img src="./assets/images/icons/ticket.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>View Ticket Response</span>
+                    </a>
+                </li>
+                
+            </div>
+
+
+            <div class="px-3 mt-4">
+                <h3 class="body2 textt-primary fw-bold">EXTRAS</h3>
+
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/orders.png" width="18" height="22" alt="">
+                        <span>Survey Form</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/lunch.png" width="24" height="22" alt="">
+                        <span>Lunch Setup</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/quiz.png" width="24" height="22" alt="">
+                        <span>Quiz</span>
+                    </a>
+                </li>
+            </div>
+
+
+            <div class="px-3 mt-4">
+                <h3 class="body2 textt-primary fw-bold">INFORMATION</h3>
+
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/policy.png" width="18" height="22" alt="">
+                        <span>Policies</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/quiz.png" width="18" height="22" alt="">
+                        <span>FAQs</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/flow.png" width="24" height="22" alt="">
+                        <span>Flow</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div id="content" class="">
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-expand-lg py-2">
+                    <div class="container-fluid">
+                        <button class="btn btn-dark" id="sidebarCollapse">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <div class="d-flex justify-content-end px-4 gap-3 align-items-center w-100">
+                            <div class="">
+                                <img src="./assets/images/icons/notification.png" width="24" height="24" alt="">
+                            </div>
+                            <div class="">
+                                <img src="./assets/images/icons/loud.png" width="24" height="24" alt="">
+                            </div>
+
+
+
+                            <div class="">
+
+                                <div class="dropdown">
+                                    <button class="btn d-flex align-items-center gap-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <img src="./assets/images/header/Avatar.png" width="50" height="50" alt="">
+
+                                      <div class="d-flex flex-column text-white">
+                                        <span>Michael Mark</span>
+                                        <span>EG-84</span>
+                                      </div>
+                                      <img src="./assets/images/icons/Icons.png" width="24" height="" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu menu pt-3 pb-5" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="./assets/images/icons/setting.png" width="24" height="24" alt="">
+                                                <span>Account Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="./assets/images/icons/logout.png" width="24" height="24" alt="">
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container-fluid my-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="heading3">Dashboard</h2>
+                    <div class="d-flex align-items-center gap-4">
+                        <button class="btn px-4 py-2 bg-cyan text-white">Mark lunch</button>
+                        <button class="btn px-4 py-2 bg-deep-sky text-white">Generate Ticket</button>
+                    </div>
+                </div>
+
+
+
+                <div class="cards py-4">
+                    <div class="row g-2">
+                        <div class="col-md-3">
+                            <div class="card custBorder">
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="">
+                                        <h3 class="subtitle-bold text-muted">Total Orders</h3>
+                                        <h1 class="textt-primary">100</h1>
+                                    </div>
+                                    <div class="">
+                                        <img src="./assets/images/icons/active-orders.png" class="img-fluid" width="50"  alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card custBorder">
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="">
+                                        <h3 class="subtitle-bold text-muted">Ongoing Orders</h3>
+                                        <h1 class="textt-primary text-yellow">05</h1>
+                                    </div>
+                                    <div class="">
+                                        <img src="./assets/images/icons/ongoing-orders.png" class="img-fluid" width="50"  alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card custBorder">
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="">
+                                        <h3 class="subtitle-bold text-muted">Completed</h3>
+                                        <h1 class="text-greenn">90</h1>
+                                    </div>
+                                    <div class="">
+                                        <img src="./assets/images/icons/completed.png" class="img-fluid" width="50"  alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card custBorder">
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="">
+                                        <h3 class="subtitle-bold text-muted">Rejected</h3>
+                                        <h1 class="text-red">04</h1>
+                                    </div>
+                                    <div class="">
+                                        <img src="./assets/images/icons/rejected-ac.png" class="img-fluid" width="50"  alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="cards">
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <div class="card chart r-3 rounded-3 bg-transparent border-top-0">
+                                <div class="card-header r-3 pt-3" style="background-color: #0077B6;">
+                                    <p class="text-white body2-bold m-0">Orders</p>
+                                </div>
+                                <div class="card-body px-3">
+                                    <h4 class="body1-bold">Current Month Orders</h4>
+                                    <div class="border-bottom mb-3 border-2 pb-3 d-flex flex-column gap-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span>Total</span>
+                                            <span>100</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span>Completed</span>
+                                            <span>90</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span>Remaining</span>
+                                            <span>09</span>
+                                        </div>
+                                    </div>
+
+                                    <h4 class="body1-bold">Last 4 Month Orders</h4>
+                                    <div class="d-flex flex-column gap-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span>Total</span>
+                                            <span>200</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span>Completed</span>
+                                            <span>190</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span>Remaining</span>
+                                            <span>10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card r-3 rounded-3 bg-transparent border-top-0 chart">
+                                <div class="card-header r-3 pt-3" style="background-color: #0077B6;">
+                                    <p class="text-white body2-bold m-0">Writer Productivity</p>
+                                </div>
+
+                                <div class="card-body p-0 d-flex justify-content-center align-items-center">
+                                    <canvas id="myChart" class="h-400" ></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex flex-column gap-4">
+                            <div class="card red-card r-3 ">
+                                <div class="card-body p-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="subtitle-bold">Your Penalty</h6>
+                                        <div class="" style="width: 24px;">
+                                            <img src="./assets/images/icons/flow.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="" style="width: 95px;height: 95px;">
+                                            <img src="./assets/images/icons/Wallet.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="">
+                                            <span class="title-bold text-grey">R.S</span>
+                                            <span class="title-bold text-red">1,100</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card yellow-card r-3 ">
+                                <div class="card-body p-3">
+                                    <h6 class="subtitle-bold text-center">Cancel Orders</h6>
+                                    <div class="py-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="body2">Last 6 Months</p>
+                                            <span class="border-bottom border-dark">
+                                                1
+                                            </span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="body2">Academic</p>
+                                            <span class="border-bottom border-dark">
+                                                0
+                                            </span>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <p class="body2">LG</p>
+                                            <span class="border-bottom border-dark">
+                                                1
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row py-3 px-3 mt-3">
+                        <div class="card p-0 borders-top-radius">
+                            <div class="card-header r-3 py-3" style="background-color: #0077B6;">
+                                <p class="text-white body2-bold m-0">Benchmark</p>
+                            </div>
+                            <div class="card-body  border-22 p-3 d-flex">
+                                <div class="w-50 d-flex flex-column gap-2 border-end pe-2 border-2">
+                                    <h3 class="body1-bold">Current Month Benchmark</h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="body2">Total</span>
+                                        <span class="body1 text-deep-sky">48000</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="body2">Completed</span>
+                                        <span class="body1 text-deep-sky">76500</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="body2">Remaining</span>
+                                        <span class="body1 text-deep-sky">-28500</span>
+                                    </div>
+                                </div>
+                                <div class="w-50 d-flex px-4 flex-column gap-2">
+                                    <h3 class="body1-bold">Last 4 Month Benchmark</h3>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="body2">Total</span>
+                                        <span class="body1 text-deep-sky">192000</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="body2">Completed</span>
+                                        <span class="body1 text-deep-sky">362650</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="body2">Remaining</span>
+                                        <span class="body1 text-deep-sky">-170650</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ["Total", 'Remaining', 'Achieved'],
+            datasets: [{
+                data: [123434, 12389, 12343],
+                backgroundColor: ['#0077B6', '#00B4D8', '#00B4D8'], // Customize colors
+                borderColor: ['white', 'white', 'white'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    position: 'right',
+                    labels: {
+                        usePointStyle: true,
+                        pointStyle: 'circle',
+                        font: { size: 14 },
+                        generateLabels: (chart) => {
+                            // ✅ Custom legend labels with values
+                            const dataset = chart.data.datasets[0];
+                            return chart.data.labels.map((label, i) => ({
+                                text: `${label}: ${dataset.data[i]}`, // Add values to legend
+                                fillStyle: dataset.backgroundColor[i],
+                                strokeStyle: dataset.borderColor[i],
+                                pointStyle: 'circle'
+                            }));
+                        }
+                    }
+                },
+                datalabels: {
+                    color: 'white', // ✅ Display values inside chart
+                    font: { weight: 'bold', size: 14 },
+                    anchor: 'center',
+                    align: 'center',
+                    formatter: (value) => value
+                }
+            }
+        }
+    });
+</script>
+<!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+<script src="assets/js/app.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButton = document.getElementById("dropdownMenuButton");
+        const arrowImage = dropdownButton.querySelector(".dropdown-arrow");
+
+        dropdownButton.addEventListener("click", function () {
+            setTimeout(() => {
+                if (dropdownButton.getAttribute("aria-expanded") === "true") {
+                    arrowImage.src = "./assets/images/icons/down-chevron.png"; // Change to "Up" arrow
+                    arrowImage.setAttribute("width", "13"); // Increase width
+                    arrowImage.setAttribute("height", "13"); // Increase height (optional)
+                    arrowImage.classList.add("ms-2");
+                } else {
+                    arrowImage.src = "./assets/images/icons/Enabled.png"; // Change back to "Down" arrow
+                    arrowImage.setAttribute("width", "24"); // Increase width
+                    arrowImage.setAttribute("height", "24");
+                }
+            }, 50); // Delay to sync with Bootstrap dropdown behavior
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
