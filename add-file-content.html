@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigned|| Writer's Portal</title>
+    <title>Add File Content|| Writer's Portal</title>
     <link href="assets/style/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style/style.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -15,7 +14,7 @@
 </head>
 <body>
 
-<div class="wrapper">   
+<div class="wrapper">
     <!-- Sidebar -->
     <aside id="sidebar" class=" white-bg">
         <div class="sidebar-header p-3">
@@ -68,7 +67,7 @@
                             </a>
                         </li>
                         <li class="m-0 py-0">
-                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="rejected.html">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
                                 <img src="./assets/images/icons/rejected.png" width="24" height="24" alt="">
                                 <span>Rejected</span>
                             </a>
@@ -91,7 +90,7 @@
                 </li>
                 <div class=" border-bottom">
                     <li>
-                        <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                        <a href="add-social.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
                             <img src="./assets/images/icons/social-account.png" width="24" height="24" class="img-fluid" alt="">
                             <span>Add Social Account</span>
                         </a>
@@ -247,16 +246,11 @@
 
             <div class="container-fluid my-4">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="heading3">Awarded Orders</h2>
-                    <div class="d-flex align-items-center gap-2">
-                        <span class="label">Orders</span>
-                        /
-                        <a class="label-bold textt-primary" href="my-orders.html">Awarded</a>
-                    </div>
+                    <h2 class="heading3">Add File Content</h2>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center py-5">
-                    <p class="body1-bold p-0 m-0">Awarded List</p>
+                    <p class="body1-bold p-0 m-0">Order List</p>
                     <div class="d-flex align-items-center gap-6">
                         <div class="d-flex align-items-center gap-2">
                             <div class="dropdown">
@@ -302,189 +296,268 @@
 
 
 
-        <div class="container py-5">
+        <div class="container pb-5 mb-4">
 
             <div class="table-responsive table-s ">
                 <table class="table table-striped" >
                     <thead>
                         <tr>
                             <th>
-                                <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center justify-content-center gap-3">
                                     <span>S.No</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
                             <th>
-                                <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center justify-content-center gap-3">
                                     <span>Order ID</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
                             <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Paper Topic</span>
+                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                    <span>Writer Name</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
                             <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Type</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Citing 
-                                        Style</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Academic
-                                        Level</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Awarded
-                                        Words</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Deadline</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <div class="d-flex align-items-center justify-content-center gap-3">
+                                    <span>Action</span>
                                 </div>
                             </th>
                         </tr>
                     </thead>
                     <tbody class="overflow-auto">
                       <tr>
-                        <td>1</td>
-                        <td>2022-10-3461</td>
-                        <td>Annual Assessment of Progress (AAP)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>3500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
+                            <div class="d-flex justify-content-center align-items-center">
+                                1
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a  class="text-decoration-none">235</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
                             </div>
                         </td>
                       </tr>
-
                       <tr>
-                        <td>2</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation 
-                            Proposal</td>
-                        <td>Harvard</td>
-                        <td>Masters</td>
-                        <td>3500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
+                            <div class="d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a  class="text-decoration-none">123</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
                             </div>
                         </td>
                       </tr>
-
-
                       <tr>
-                        <td>3</td>
-                        <td>2022-10-3461</td>
-                        <td>DB5000 DBA Thesis</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>2700</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
+                            <div class="d-flex justify-content-center align-items-center">
+                                3
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a  class="text-decoration-none">6634</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
                             </div>
                         </td>
                       </tr>
-
-
                       <tr>
-                        <td>4</td>
-                        <td>2022-10-3461</td>
-                        <td>J23 PL7542 Intelligence Failure (Activity 6)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>2700</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
+                            <div class="d-flex justify-content-center align-items-center">
+                                4
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="text-decoration-none">124</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
                             </div>
                         </td>
                       </tr>
-
-
-
                       <tr>
-                        <td>5</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation</td>
-                        <td>Harvard</td>
-                        <td>Undergraduate</td>
-                        <td>1500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
+                            <div class="d-flex justify-content-center align-items-center">
+                                5
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="text-decoration-none">5456</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
                             </div>
                         </td>
                       </tr>
-
-
-
                       <tr>
-                        <td>6</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation</td>
-                        <td>Harvard</td>
-                        <td>Undergraduate</td>
-                        <td>1500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
+                            <div class="d-flex justify-content-center align-items-center">
+                                6
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="text-decoration-none">1234</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
                             </div>
                         </td>
                       </tr>
-
-
                       <tr>
-                        <td>7</td>
-                        <td>2022-10-3461</td>
-                        <td>Annual Assessment of Progress (AAP)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>3500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
+                            <div class="d-flex justify-content-center align-items-center">
+                                7
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="text-decoration-none">7856</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
                             </div>
                         </td>
                       </tr>
-
-
-
-                      
+                      <tr>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                8
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="text-decoration-none">2346</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                9
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="text-decoration-none">3454</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                10
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a class="text-decoration-none">2347</a>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                Tasfoura Dilawar
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="button" class="btn px-3 text-white py-2 bg-green"data-bs-toggle="modal" data-bs-target="#contentModal">Add Content</button>                              
+                            </div>
+                        </td>
+                      </tr>
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-center py-2">
@@ -500,8 +573,8 @@
                           <li class="page-item"><a class="page-link" href="#">2</a></li>
                           <li class="page-item"><a class="page-link" href="#">3</a></li>
                           <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">6</a></li>
                           <li class="page-item">
-                              <li class="page-item"><a class="page-link" href="#">6</a></li>
                             <a class="page-link" href="#" aria-label="Next">
                               <span aria-hidden="true"><img src="./assets/images/icons/pagination-right.png" width="17" alt=""></span>
                               <span class="sr-only">Next</span>
@@ -516,7 +589,6 @@
 
 
         </div>
-
         
     </div>
 </div>
@@ -619,54 +691,45 @@
     </div>
   </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('myChart');
 
-    new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ["Total", 'Remaining', 'Achieved'],
-            datasets: [{
-                data: [123434, 12389, 12343],
-                backgroundColor: ['#0077B6', '#00B4D8', '#00B4D8'], // Customize colors
-                borderColor: ['white', 'white', 'white'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    position: 'right',
-                    labels: {
-                        usePointStyle: true,
-                        pointStyle: 'circle',
-                        font: { size: 14 },
-                        generateLabels: (chart) => {
-                            // ✅ Custom legend labels with values
-                            const dataset = chart.data.datasets[0];
-                            return chart.data.labels.map((label, i) => ({
-                                text: `${label}: ${dataset.data[i]}`, // Add values to legend
-                                fillStyle: dataset.backgroundColor[i],
-                                strokeStyle: dataset.borderColor[i],
-                                pointStyle: 'circle'
-                            }));
-                        }
-                    }
-                },
-                datalabels: {
-                    color: 'white', // ✅ Display values inside chart
-                    font: { weight: 'bold', size: 14 },
-                    anchor: 'center',
-                    align: 'center',
-                    formatter: (value) => value
-                }
-            }
-        }
-    });
-</script>
-<!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+<div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered custom-modal" >
+      <div class="modal-content">
+        <div class="modal-header bgg-primay text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Apply Filter</h5>
+          <button type="button" class="btn-close bg-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="p-4 shadow-sm row g-2">
+                <h1 class="heading3">Order ID: 235</h1>
+                <div class="row g-3">
+                    <div class="col-md-12">
+                        <div class="input-container">
+                            <input type="text" id="hourse" value="Enter Your File Name " class="text-grey" required>
+                            <label for="hourse">File Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="input-container">
+                            <textarea id="Initial" class="text-grey form-control" rows="6" style="resize: none;" required>Paste Your Content Here</textarea>
+                            <label for="Initial">Add File Content</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Clear All</button>
+          <button type="button" class="btn bgg-primay text-white">Save File</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
 <script src="assets/js/app.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {

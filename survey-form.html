@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigned|| Writer's Portal</title>
+    <title>View Ticket Response|| Writer's Portal</title>
     <link href="assets/style/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style/style.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -12,10 +11,27 @@
 
     <!-- Google Material Icons CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+
+    <!-- CKEditor CDN -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>
+
+
+
+
+    <style>
+        .ck-editor__editable {
+        border: 1px solid #ccc !important;
+        border-radius: 4px;
+        padding: 10px;
+        min-height: 200px;
+        background: #fff;
+        box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.15); /* 👇 Bottom shadow only */
+    }
+    </style>
 </head>
 <body>
 
-<div class="wrapper">   
+<div class="wrapper">
     <!-- Sidebar -->
     <aside id="sidebar" class=" white-bg">
         <div class="sidebar-header p-3">
@@ -50,7 +66,7 @@
                     </button>
                     <ul class="dropdown-menu h px-4 border-0 bg-transparent" aria-labelledby="dropdownMenuButton">
                         <li class="m-0 py-0">
-                            <a class="dropdown-item active my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="my-orders.html">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="my-orders.html">
                                 <img src="./assets/images/icons/my-orders.png" width="18" height="22" alt="">
                                 <span>My Orders</span>
                             </a>
@@ -68,7 +84,7 @@
                             </a>
                         </li>
                         <li class="m-0 py-0">
-                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="rejected.html">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
                                 <img src="./assets/images/icons/rejected.png" width="24" height="24" alt="">
                                 <span>Rejected</span>
                             </a>
@@ -147,7 +163,7 @@
                 <h3 class="body2 textt-primary fw-bold">EXTRAS</h3>
 
                 <li class="m-0 py-0">
-                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 active label text-decoration-none text-dark py-2 px-2" href="#">
                         <img src="./assets/images/icons/orders.png" width="18" height="22" alt="">
                         <span>Survey Form</span>
                     </a>
@@ -245,283 +261,18 @@
                 </nav>
             </header>
 
-            <div class="container-fluid my-4">
-                <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="heading3">Awarded Orders</h2>
-                    <div class="d-flex align-items-center gap-2">
-                        <span class="label">Orders</span>
-                        /
-                        <a class="label-bold textt-primary" href="my-orders.html">Awarded</a>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-between align-items-center py-5">
-                    <p class="body1-bold p-0 m-0">Awarded List</p>
-                    <div class="d-flex align-items-center gap-6">
-                        <div class="d-flex align-items-center gap-2">
-                            <div class="dropdown">
-                                <button class="btn d-flex text-white btn-dropdown align-items-center border-0 gap-4 text-dark py-2 dropdown-toggle" 
-                                        type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>Show 10 rows</span>
-                                    <img src="./assets/images/icons/white-arrow.png" width="20" height="20" class="dropdown-arrow" alt="">
-                                </button>
-                                <ul class="dropdown-menu cust h px-4 border-0 bg-transparent" aria-labelledby="dropdownMenuButton">
-                                    <li class="m-0 py-3">
-                                        <button class="btn btn-primary">10 rows</button>
-                                    </li>
-                                </ul>
-                            </div>
-
-
-                            
-
-                            <button class="btn body2 bg-gray text-white">Copy</button>
-                            <button class="btn body2 bg-gray text-white">CSV</button>
-                            <button class="btn body2 bg-gray text-white">Excel</button>
-                            <button class="btn body2 bg-gray text-white">PDF</button>
-                            <button class="btn body2 bg-gray text-white">Print</button>
-                        </div>
-
-                        <div class="pt-3">
-                            <div class="input-container px-3 position-relative">
-                                <input class="form-control py-1" type="text" placeholder="Search" aria-label=".form-control-lg example">
-                                <img src="./assets/images/icons/search.png" width="17" height="17" alt="" class="position-absolute top-3">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-                
-            </div>
-
-
         </div>
-
-
-
-        <div class="container py-5">
-
-            <div class="table-responsive table-s ">
-                <table class="table table-striped" >
-                    <thead>
-                        <tr>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>S.No</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Order ID</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Paper Topic</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Type</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Citing 
-                                        Style</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Academic
-                                        Level</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Awarded
-                                        Words</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Deadline</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="overflow-auto">
-                      <tr>
-                        <td>1</td>
-                        <td>2022-10-3461</td>
-                        <td>Annual Assessment of Progress (AAP)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>3500</td>
-                        <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        <td>2</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation 
-                            Proposal</td>
-                        <td>Harvard</td>
-                        <td>Masters</td>
-                        <td>3500</td>
-                        <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
-                        </td>
-                      </tr>
-
-
-                      <tr>
-                        <td>3</td>
-                        <td>2022-10-3461</td>
-                        <td>DB5000 DBA Thesis</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>2700</td>
-                        <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
-                        </td>
-                      </tr>
-
-
-                      <tr>
-                        <td>4</td>
-                        <td>2022-10-3461</td>
-                        <td>J23 PL7542 Intelligence Failure (Activity 6)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>2700</td>
-                        <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
-                        </td>
-                      </tr>
-
-
-
-                      <tr>
-                        <td>5</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation</td>
-                        <td>Harvard</td>
-                        <td>Undergraduate</td>
-                        <td>1500</td>
-                        <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
-                        </td>
-                      </tr>
-
-
-
-                      <tr>
-                        <td>6</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation</td>
-                        <td>Harvard</td>
-                        <td>Undergraduate</td>
-                        <td>1500</td>
-                        <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
-                        </td>
-                      </tr>
-
-
-                      <tr>
-                        <td>7</td>
-                        <td>2022-10-3461</td>
-                        <td>Annual Assessment of Progress (AAP)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>3500</td>
-                        <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
-                        </td>
-                      </tr>
-
-
-
-                      
-                    </tbody>
-                </table>
-                <div class="d-flex justify-content-center py-2">
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination gap-2">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true"><img src="./assets/images/icons/pagination-icon.png" width="17" alt=""></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item">
-                              <li class="page-item"><a class="page-link" href="#">6</a></li>
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true"><img src="./assets/images/icons/pagination-right.png" width="17" alt=""></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
+        <div class="container mt-5 py-5">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-column justify-content-center align-items-center">
+                    <img src="./assets/images/form/Security error.png" class="img-fluid" width="448" alt="">
+                    <h1 class="heading1 textt-primary">Access Denied</h1>
+                    <p class="heading3 text-cyan-blue">You are not authorized to view this page</p>
                 </div>
             </div>
-
-
-
-
         </div>
-
-        
     </div>
 </div>
-
-
 
 
 
@@ -619,55 +370,100 @@
     </div>
   </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('myChart');
 
-    new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ["Total", 'Remaining', 'Achieved'],
-            datasets: [{
-                data: [123434, 12389, 12343],
-                backgroundColor: ['#0077B6', '#00B4D8', '#00B4D8'], // Customize colors
-                borderColor: ['white', 'white', 'white'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    position: 'right',
-                    labels: {
-                        usePointStyle: true,
-                        pointStyle: 'circle',
-                        font: { size: 14 },
-                        generateLabels: (chart) => {
-                            // ✅ Custom legend labels with values
-                            const dataset = chart.data.datasets[0];
-                            return chart.data.labels.map((label, i) => ({
-                                text: `${label}: ${dataset.data[i]}`, // Add values to legend
-                                fillStyle: dataset.backgroundColor[i],
-                                strokeStyle: dataset.borderColor[i],
-                                pointStyle: 'circle'
-                            }));
-                        }
-                    }
-                },
-                datalabels: {
-                    color: 'white', // ✅ Display values inside chart
-                    font: { weight: 'bold', size: 14 },
-                    anchor: 'center',
-                    align: 'center',
-                    formatter: (value) => value
-                }
-            }
-        }
-    });
-</script>
+<div class="modal fade" id="selfAssign" tabindex="-1" aria-labelledby="selfAssignLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered custom-modal" >
+      <div class="modal-content">
+        <div class="modal-header bgg-primay text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Self Assign Task</h5>
+          <button type="button" class="btn-close bg-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <div class="container">
+            <form>
+                <div class="row py-4">
+                    <div class="col-md-6">
+                        <div class="input-container">
+                            <select id="order-meeting" required>
+                                <option value="Select" selected>Select</option>
+                                <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                                <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+                                <option value="evening">Evening (3:00 PM - 6:00 PM)</option>
+                            </select>
+                            <label for="order-meeting">Message Status</label>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-container">
+                            <input type="date" id="order-meeting" required />
+                            <label for="order-meeting">Select Date</label>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12">
+                        <div id="editor"></div>
+
+                    </div>
+                </div>
+            </form>
+           </div>            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Clear All</button>
+          <button type="button" class="btn bgg-primay text-white">ASSIGN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
 <script src="assets/js/app.js"></script>
+
+<script>
+    // Initialize CKEditor
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            placeholder: 'Enter Task Details',
+            toolbar: {
+                items: [
+                    'heading', '|',
+                    'bold', 'italic', 'underline', 'strikethrough', '|',
+                    'fontFamily', 'fontSize', 'fontColor', 'fontBackgroundColor', '|',
+                    'bulletedList', 'numberedList', '|',
+                    'alignment', 'indent', 'outdent', '|',
+                    'link', 'imageUpload', 'blockQuote', 'insertTable', '|',
+                    'undo', 'redo'
+                ]
+            },
+            language: 'en',
+            licenseKey: '',
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+    // Save content function
+    function saveContent() {
+        const content = editor.getData();
+        const title = document.getElementById('docTitle').value;
+        
+        // Create a blob with the content
+        const blob = new Blob([`Title: ${title}\n\n${content}`], {type: 'text/html'});
+        
+        // Create download link
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = `${title || 'untitled'}.html`;
+        a.click();
+        
+        console.log('Content saved:', content);
+    }
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const dropdownButton = document.getElementById("dropdownMenuButton");

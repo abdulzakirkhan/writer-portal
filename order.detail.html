@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details || Writer's Portal</title>
+    <link href="assets/style/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Material Icons CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CKEditor CDN -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js"></script>
+
+
+    
+</head>
+<body>
+
+<div class="wrapper">
+    <!-- Sidebar -->
+    <aside id="sidebar" class=" white-bg">
+        <div class="sidebar-header p-3">
+            <h3 class="text-center">
+                <a href="/index.html" class="">
+                    <img src="./assets/images/logo.png" width="87" height="32" class="img-fluid" alt="">
+                </a>
+            </h3>
+        </div>
+        <div class="input-container px-3 position-relative py-4">
+            <input class="form-control py-2" type="text" placeholder="Search" aria-label=".form-control-lg example">
+            <img src="./assets/images/icons/search.png" width="17" height="17" alt="" class="position-absolute top-3">
+        </div>
+        
+        <ul class="list-unstyled components">
+            <div class="py-3 px-3">
+                <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                    <img src="./assets/images/icons/dashboard-active.png" width="24" height="24" class="img-fluid" alt="">
+                    <span>Dashboard</span>
+                </a>
+            </div>
+            <div class="px-2">
+                <h3 class="body2 textt-primary fw-bold">GENERAL</h3>
+            </div>
+            <div class="px-3">
+                <div class="dropdown">
+                    <button class="btn d-flex align-items-center border-0 gap-4 text-dark py-2 dropdown-toggle" 
+                            type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./assets/images/icons/orders.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>Orders</span>
+                        <img src="./assets/images/icons/Enabled.png" width="20" height="20" class="dropdown-arrow" alt="">
+                    </button>
+                    <ul class="dropdown-menu h px-4 border-0 bg-transparent" aria-labelledby="dropdownMenuButton">
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item active my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="my-orders.html">
+                                <img src="./assets/images/icons/my-orders.png" width="18" height="22" alt="">
+                                <span>My Orders</span>
+                            </a>
+                        </li>
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="assigned.html">
+                                <img src="./assets/images/icons/assigned.png" width="24" height="24" alt="">
+                                <span>Assigned</span>
+                            </a>
+                        </li>
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="awarded.html">
+                                <img src="./assets/images/icons/awarded.png" width="24" height="24" alt="">
+                                <span>Awarded</span>
+                            </a>
+                        </li>
+                        <li class="m-0 py-0">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="rejected.html">
+                                <img src="./assets/images/icons/rejected.png" width="24" height="24" alt="">
+                                <span>Rejected</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="px-3">
+                <li>
+                    <a href="/check-plagrism.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                        <img src="./assets/images/icons/t.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>Check Plagrism</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                        <img src="./assets/images/icons/file-content.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>Add File Content</span>
+                    </a>
+                </li>
+                <div class=" border-bottom">
+                    <li>
+                        <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                            <img src="./assets/images/icons/social-account.png" width="24" height="24" class="img-fluid" alt="">
+                            <span>Add Social Account</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+           
+            <div class="px-3 mt-4">
+                <h3 class="body2 textt-primary fw-bold">UTILITIES</h3>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/my-orders.png" width="18" height="22" alt="">
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <div class="overflow-hidden">
+                    <div class="dropdown px-0 position-relative">
+                        <button class="btn d-flex align-items-center border-0 gap-4 px-2 text-dark py-2 dropdown-toggle" 
+                                type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/icons/productivity.png" width="24" height="24" class="img-fluid" alt="">
+                            <span>Productivity</span>
+                            <img src="./assets/images/icons/Enabled.png" width="20" height="20" class="dropdown-arrow" alt="">
+                        </button>
+                        <ul class="dropdown-menu d-custom px-4 border-0 bg-transparent" aria-labelledby="dropdownMenuButton2">
+                            <li class="m-0 py-0">
+                                <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                                    <img src="./assets/images/icons/hourse.png" width="24" height="24" alt="">
+                                    <span>Hours</span>
+                                </a>
+                            </li>
+                            <li class="m-0 py-0">
+                                <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
+                                    <img src="./assets/images/icons/writer.png" width="24" height="24" alt="">
+                                    <span>Writer</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <li class="border-bottom">
+                    <a href="/view-ticket-response.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                        <img src="./assets/images/icons/ticket.png" width="24" height="24" class="img-fluid" alt="">
+                        <span>View Ticket Response</span>
+                    </a>
+                </li>
+                
+            </div>
+
+
+            <div class="px-3 mt-4">
+                <h3 class="body2 textt-primary fw-bold">EXTRAS</h3>
+
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/orders.png" width="18" height="22" alt="">
+                        <span>Survey Form</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/lunch.png" width="24" height="22" alt="">
+                        <span>Lunch Setup</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/quiz.png" width="24" height="22" alt="">
+                        <span>Quiz</span>
+                    </a>
+                </li>
+            </div>
+
+
+            <div class="px-3 mt-4">
+                <h3 class="body2 textt-primary fw-bold">INFORMATION</h3>
+
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/policy.png" width="18" height="22" alt="">
+                        <span>Policies</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/quiz.png" width="18" height="22" alt="">
+                        <span>FAQs</span>
+                    </a>
+                </li>
+                <li class="m-0 py-0">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                        <img src="./assets/images/icons/flow.png" width="24" height="22" alt="">
+                        <span>Flow</span>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div id="content" class="">
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-expand-lg py-2">
+                    <div class="container-fluid">
+                        <button class="btn btn-dark" id="sidebarCollapse">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                        <div class="d-flex justify-content-end px-4 gap-3 align-items-center w-100">
+                            <div class="">
+                                <img src="./assets/images/icons/notification.png" width="24" height="24" alt="">
+                            </div>
+                            <div class="">
+                                <img src="./assets/images/icons/loud.png" width="24" height="24" alt="">
+                            </div>
+
+
+
+                            <div class="">
+
+                                <div class="dropdown">
+                                    <button class="btn d-flex align-items-center gap-2 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <img src="./assets/images/header/Avatar.png" width="50" height="50" alt="">
+
+                                      <div class="d-flex flex-column text-white">
+                                        <span>Michael Mark</span>
+                                        <span>EG-84</span>
+                                      </div>
+                                      <img src="./assets/images/icons/Icons.png" width="24" height="" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu menu pt-3 pb-5" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="./assets/images/icons/setting.png" width="24" height="24" alt="">
+                                                <span>Account Settings</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <img src="./assets/images/icons/logout.png" width="24" height="24" alt="">
+                                                <span>Logout</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container-fluid my-4">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="heading3">
+                        <a href="my-orders.html" class="text-decoration-none heading3 text-dark">
+                            <img src="/assets/images/icons/arrow_back.png" width="32" alt="">
+                            Orders Details
+                        </a>
+                    </h2>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="label">Orders</span>
+                        /
+                        <span class="label">Assigned</span>
+                        /
+                        <a class="label-bold textt-primary" href="my-orders.html">Order Details</a>
+                    </div>
+                </div>
+
+
+
+                <div class="d-flex  align-items-center">
+                    <div class="w-100">
+                        <ul class="nav nav-tabs border-0 gap-2 justify-content-end" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 custom-nav-link active" id="justification-tab" data-bs-toggle="tab" data-bs-target="#justification" type="button" role="tab" aria-controls="justification" aria-selected="true">Justification Summary</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 custom-nav-link" id="Revisions-tab" data-bs-toggle="tab" data-bs-target="#Revisions" type="button" role="tab" aria-controls="Revisions" aria-selected="false">Revisions</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 custom-nav-link" id="show-trail-tab" data-bs-toggle="tab" data-bs-target="#trail" type="button" role="tab" aria-controls="show-trail" aria-selected="false">Show Trail</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 custom-nav-link" id="Messages-tab" data-bs-toggle="tab" data-bs-target="#Messages" type="button" role="tab" aria-controls="Messages" aria-selected="false">Messages</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-3 custom-nav-link" id="Marks-tab" data-bs-toggle="tab" data-bs-target="#Marks" type="button" role="tab" aria-controls="Marks" aria-selected="false">Marks</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content mt-5 bg-transparent" id="myTabContent">
+                            <div class="tab-pane fade show active bg-transparent" id="justification" role="tabpanel" aria-labelledby="justification-tab">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <p class="body1-bold text-dark">Order Information</p>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <div class="input-container">
+                                                    <input type="text" value="2021-06-235" id="order-id" required>
+                                                    <label for="order-id">order Id</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-container">
+                                                    <input type="text" value="close" id="order-status" class="text-red" required>
+                                                    <label for="order-status">order Status</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-container">
+                                                    <input type="text" value="2021-06-05" id="order-date" required>
+                                                    <label for="order-date">order Date</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="input-container">
+                                                    <input type="text" id="order-meeting" value=" " required>
+                                                    <label for="order-meeting">Order Meeting Date & Time:</label>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div class="row g-3 details">
+                                                <h3 class="text-dark py-3">Paper Details</h3>
+
+                                                <div class="col-md-4">
+                                                    <div class="input-container">
+                                                        <input type="text" id="order-meeting" value="Dissertation" class="text-grey" required>
+                                                        <label for="order-meeting">Type of Paper:</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="input-container">
+                                                        <input type="text" id="assignment" value="Assignment" class="text-grey" required>
+                                                        <label for="assignment">General Type</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="input-container">
+                                                        <input type="text" id="paper" value="Final Thesis DBA" class="text-grey" required>
+                                                        <label for="paper">Paper Topic</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="subjetc" value=" " class="text-grey" required>
+                                                        <label for="subject">Paper Subject</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="Academic" value="PHD" class="text-grey" required>
+                                                        <label for="Academic">Academic Level</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="Citing" value="Harvard" class="text-grey" required>
+                                                        <label for="Citing">Citing Style:</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="Language" value="English UK" class="text-grey" required>
+                                                        <label for="Language">Language Style:</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row g-3">
+                                                <h3 class="text-dark py-2">Requirements & Specifications</h3>
+
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="word-count" value="31,500" class="text-grey" required>
+                                                        <label for="word-count">Required Word Count:</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="total-count" value="0" class="text-grey" required>
+                                                        <label for="total-count">Total Word Count</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="hourse" value="0" class="text-grey" required>
+                                                        <label for="hourse">No. of Hours</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="course" value="DBA ARU" class="text-grey" required>
+                                                        <label for="course">Course </label>
+                                                    </div>
+                                                </div>
+                                                <h1 class="my-3 text-dark heading3">Additional Information</h1>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="Request" value=" " class="text-grey" required>
+                                                        <label for="Request">On Request of: </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <input type="text" id="Request" value="No File Choosen" class="text-red input-border" required>
+                                                        <label for="Request">Order File</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-12">
+                                                    <div class="input-container">
+                                                        <textarea id="Initial" class="text-grey form-control" rows="6" style="resize: none;" required>We will confirm once we get any update from the student.</textarea>
+                                                        <label for="Initial">Initial Message:</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="bg-transparent col-12">
+                                                <div class="input-container">
+                                                    <input type="text" id="Request" value="No File Choosen " class="text-red input-border" required>
+                                                    <label for="Request">Order File</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container editor-container">
+                                      
+                                        <form>
+                                           
+                                            
+                                            <div id="editor"></div>
+                                            
+                                            <div class="row py-4">
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <select id="order-meeting" required>
+                                                            <option value="Select" selected>Select</option>
+                                                            <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                                                            <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+                                                            <option value="evening">Evening (3:00 PM - 6:00 PM)</option>
+                                                        </select>
+                                                        <label for="order-meeting">Message Status</label>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="input-container">
+                                                        <select id="order-meeting" required>
+                                                            <option value="select" selected>Select</option>
+                                                            <option value="morning">Morning (9:00 AM - 12:00 PM)</option>
+                                                            <option value="afternoon">Afternoon (12:00 PM - 3:00 PM)</option>
+                                                            <option value="evening">Evening (3:00 PM - 6:00 PM)</option>
+                                                        </select>
+                                                        <label for="order-meeting">Select User</label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3 text-center">
+                                                <button type="button" class="btn bgg-primay text-white px-4 py-2" onclick="saveContent()">
+                                                    <i class="bi bi-save"></i> Submit
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade bg-transparent" id="Revisions" role="tabpanel" aria-labelledby="Revisions-tab">
+                                <div class="container">
+
+                                    <div class="table-responsive">
+                                        <table class="table table-striped" >
+                                            <thead>
+                                                <tr class="body2">
+                                                    <th>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <span>Order ID</span>
+                                                            <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <span>Added By</span>
+                                                            <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <span>Acceptance</span>
+                                                            <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        </div>
+                                                    </th>
+                                                    <th class="">
+                                                        <div class="d-flex align-items-center justify-content-center gap-3">
+                                                            <span>Justification</span>
+                                                            <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        </div>
+                                                    </th>
+                                                    <th>
+                                                        <div class="d-flex align-items-center gap-3">
+                                                            <span>Added Date</span>
+                                                            <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        </div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="overflow-auto">
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Noor Ul Ain</td>
+                                                <td>Yes</td>
+                                                <td>
+                                                   <p class="body2">No evidence of failure is provided. Order is cancelled on the basis of client not responding</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Noor Ul Ain</td>
+                                                <td>No</td>
+                                                <td>
+                                                   <p class="body2">Failure accepted!</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Imtiaz Afsar Manager</td>
+                                                <td>Yes</td>
+                                                <td>
+                                                   <p class="body2">Accepted</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+
+
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Abdul Rafay Manager</td>
+                                                <td>No</td>
+                                                <td>
+                                                   <p class="body2">Duplicate Order</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Imtiaz Afsar Manager</td>
+                                                <td>Yes</td>
+                                                <td>
+                                                   <p class="body2">Duplicate Order</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Noor Ul Ain</td>
+                                                <td>Yes</td>
+                                                <td>
+                                                   <p class="body2">URGENT ORDER</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Syed Muneeb Imtiaz (TL)</td>
+                                                <td>Yes</td>
+                                                <td>
+                                                   <p class="body2">URGENT ORDER</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Noor Ul Ain</td>
+                                                <td>Yes</td>
+                                                <td>
+                                                   <p class="body2">URGENT ORDER</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Syed Muneeb Imtiaz (TL)</td>
+                                                <td>No</td>
+                                                <td>
+                                                   <p class="body2">No reason or evidence</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                    1970-01-228
+                                                </td>
+                                                <td>Noor Ul Ain</td>
+                                                <td>Yes</td>
+                                                <td>
+                                                   <p class="body2">No reason or evidence</p>                         
+                                                </td>
+                                                <td>
+                                                   <p class="body2 ">2024-05-31 07:43:37</p>                         
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="d-flex justify-content-center py-2">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination gap-2">
+                                                  <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                      <span aria-hidden="true"><img src="./assets/images/icons/pagination-icon.png" width="17" alt=""></span>
+                                                      <span class="sr-only">Previous</span>
+                                                    </a>
+                                                  </li>
+                                                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                  <li class="page-item">
+                                                      <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                      <span aria-hidden="true"><img src="./assets/images/icons/pagination-right.png" width="17" alt=""></span>
+                                                      <span class="sr-only">Next</span>
+                                                    </a>
+                                                  </li>
+                                                </ul>
+                                              </nav>
+                                        </div>
+                                    </div>
+                        
+                        
+                        
+                        
+                                </div>
+                            </div>
+                            <div class="tab-pane fade bg-transparent" id="trail" role="tabpanel" aria-labelledby="show-trail-tab">...</div>
+                            <div class="tab-pane fade bg-transparent" id="Messages" role="tabpanel" aria-labelledby="Messages-tab">...</div>
+                            <div class="tab-pane fade bg-transparent" id="Marks" role="tabpanel" aria-labelledby="Marks-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- MODAL -->
+ 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered custom-modal" >
+      <div class="modal-content">
+        <div class="modal-header bgg-primay text-white">
+          <h5 class="modal-title" id="exampleModalLabel">Apply Filter</h5>
+          <button type="button" class="btn-close bg-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="p-4 border rounded shadow-sm row g-2">
+            
+                <!-- Start Deadline -->
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Start Deadline</label>
+                    <input type="date" class="form-control" name="start-deadline">
+                </div>
+            
+                <!-- End Deadline -->
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">End Deadline</label>
+                    <input type="date" class="form-control" name="end-deadline">
+                </div>
+            
+                <!-- Type of Paper -->
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Type of Paper</label>
+                    <select class="form-select" name="type-of-paper">
+                        <option value="" selected>Select Type</option>
+                        <option value="essay">Essay</option>
+                        <option value="research-paper">Research Paper</option>
+                        <option value="dissertation">Dissertation</option>
+                    </select>
+                </div>
+            
+                <!-- Academic Level -->
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Academic Level</label>
+                    <select class="form-select" name="academic-level">
+                        <option value="" selected>Select Level</option>
+                        <option value="undergraduate">Undergraduate</option>
+                        <option value="masters">Masters</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+            
+                <!-- Standard -->
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Standard</label>
+                    <select class="form-select" name="standard">
+                        <option value="" selected>Select Standard</option>
+                        <option value="pass">Pass (50-59%)</option>
+                        <option value="merit">Merit (60-69%)</option>
+                        <option value="distinction">Distinction (70%+)</option>
+                    </select>
+                </div>
+            
+                <!-- Order Status -->
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Order Status</label>
+                    <select class="form-select" name="order-status">
+                        <option value="" selected>Select Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="completed">Completed</option>
+                        <option value="cancelled">Cancelled</option>
+                    </select>
+                </div>
+            
+                <!-- Country Dropdown -->
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Country</label>
+                    <select class="form-select" name="country">
+                        <option value="" selected>Select Country</option>
+                        <option value="usa">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                    </select>
+                </div>
+            
+                <!-- Submit Button -->
+            </form>
+            
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Clear All</button>
+          <button type="button" class="btn btn-primary">Apply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    // Initialize CKEditor
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            toolbar: {
+                items: [
+                    'heading', '|',
+                    'bold', 'italic', 'underline', 'strikethrough', '|',
+                    'fontFamily', 'fontSize', 'fontColor', 'fontBackgroundColor', '|',
+                    'bulletedList', 'numberedList', '|',
+                    'alignment', 'indent', 'outdent', '|',
+                    'link', 'imageUpload', 'blockQuote', 'insertTable', '|',
+                    'undo', 'redo'
+                ]
+            },
+            language: 'en',
+            licenseKey: '',
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+    // Save content function
+    function saveContent() {
+        const content = editor.getData();
+        const title = document.getElementById('docTitle').value;
+        
+        // Create a blob with the content
+        const blob = new Blob([`Title: ${title}\n\n${content}`], {type: 'text/html'});
+        
+        // Create download link
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = `${title || 'untitled'}.html`;
+        a.click();
+        
+        console.log('Content saved:', content);
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ["Total", 'Remaining', 'Achieved'],
+            datasets: [{
+                data: [123434, 12389, 12343],
+                backgroundColor: ['#0077B6', '#00B4D8', '#00B4D8'], // Customize colors
+                borderColor: ['white', 'white', 'white'],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: {
+                legend: {
+                    position: 'right',
+                    labels: {
+                        usePointStyle: true,
+                        pointStyle: 'circle',
+                        font: { size: 14 },
+                        generateLabels: (chart) => {
+                            // ✅ Custom legend labels with values
+                            const dataset = chart.data.datasets[0];
+                            return chart.data.labels.map((label, i) => ({
+                                text: `${label}: ${dataset.data[i]}`, // Add values to legend
+                                fillStyle: dataset.backgroundColor[i],
+                                strokeStyle: dataset.borderColor[i],
+                                pointStyle: 'circle'
+                            }));
+                        }
+                    }
+                },
+                datalabels: {
+                    color: 'white', // ✅ Display values inside chart
+                    font: { weight: 'bold', size: 14 },
+                    anchor: 'center',
+                    align: 'center',
+                    formatter: (value) => value
+                }
+            }
+        }
+    });
+</script>
+<!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
+<script src="assets/js/app.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const dropdownButton = document.getElementById("dropdownMenuButton");
+        const arrowImage = dropdownButton.querySelector(".dropdown-arrow");
+
+        dropdownButton.addEventListener("click", function () {
+            setTimeout(() => {
+                if (dropdownButton.getAttribute("aria-expanded") === "true") {
+                    arrowImage.src = "./assets/images/icons/down-chevron.png"; // Change to "Up" arrow
+                    arrowImage.setAttribute("width", "13"); // Increase width
+                    arrowImage.setAttribute("height", "13"); // Increase height (optional)
+                    arrowImage.classList.add("ms-2");
+                } else {
+                    arrowImage.src = "./assets/images/icons/Enabled.png"; // Change back to "Down" arrow
+                    arrowImage.setAttribute("width", "24"); // Increase width
+                    arrowImage.setAttribute("height", "24");
+                }
+            }, 50); // Delay to sync with Bootstrap dropdown behavior
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

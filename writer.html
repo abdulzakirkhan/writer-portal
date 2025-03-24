@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assigned|| Writer's Portal</title>
+    <title>Writer|| Writer's Portal</title>
     <link href="assets/style/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style/style.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -15,7 +14,7 @@
 </head>
 <body>
 
-<div class="wrapper">   
+<div class="wrapper">
     <!-- Sidebar -->
     <aside id="sidebar" class=" white-bg">
         <div class="sidebar-header p-3">
@@ -68,7 +67,7 @@
                             </a>
                         </li>
                         <li class="m-0 py-0">
-                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="rejected.html">
+                            <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
                                 <img src="./assets/images/icons/rejected.png" width="24" height="24" alt="">
                                 <span>Rejected</span>
                             </a>
@@ -102,7 +101,7 @@
             <div class="px-3 mt-4">
                 <h3 class="body2 textt-primary fw-bold">UTILITIES</h3>
                 <li class="m-0 py-0">
-                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="#">
+                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="tasks.html">
                         <img src="./assets/images/icons/my-orders.png" width="18" height="22" alt="">
                         <span>Tasks</span>
                     </a>
@@ -123,7 +122,7 @@
                                 </a>
                             </li>
                             <li class="m-0 py-0">
-                                <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-1" href="#">
+                                <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark active py-2 px-1" href="#">
                                     <img src="./assets/images/icons/writer.png" width="24" height="24" alt="">
                                     <span>Writer</span>
                                 </a>
@@ -247,16 +246,11 @@
 
             <div class="container-fluid my-4">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="heading3">Awarded Orders</h2>
-                    <div class="d-flex align-items-center gap-2">
-                        <span class="label">Orders</span>
-                        /
-                        <a class="label-bold textt-primary" href="my-orders.html">Awarded</a>
-                    </div>
+                    <h2 class="heading3">Writer’s Productivity</h2>
                 </div>
 
                 <div class="d-flex justify-content-between align-items-center py-5">
-                    <p class="body1-bold p-0 m-0">Awarded List</p>
+                    <p class="body1-bold p-0 m-0">Order List</p>
                     <div class="d-flex align-items-center gap-6">
                         <div class="d-flex align-items-center gap-2">
                             <div class="dropdown">
@@ -275,18 +269,21 @@
 
                             
 
-                            <button class="btn body2 bg-gray text-white">Copy</button>
-                            <button class="btn body2 bg-gray text-white">CSV</button>
                             <button class="btn body2 bg-gray text-white">Excel</button>
-                            <button class="btn body2 bg-gray text-white">PDF</button>
-                            <button class="btn body2 bg-gray text-white">Print</button>
                         </div>
 
-                        <div class="pt-3">
+                        <div class="pt-3 d-flex align-items-center">
                             <div class="input-container px-3 position-relative">
                                 <input class="form-control py-1" type="text" placeholder="Search" aria-label=".form-control-lg example">
-                                <img src="./assets/images/icons/search.png" width="17" height="17" alt="" class="position-absolute top-3">
+                                <img src="./assets/images/icons/search.png" width="17" height="17" alt="" class="position-absolute top-2">
                             </div>
+
+
+                            <div class="pb-3">
+
+                                <button class="btn border bgg-primay text-white d-flex justify-content-center align-items-center gap-2"> <img src="./assets/images/hours/filetr.png" width="24" height="24" alt=""> Filters</button>
+                            </div>
+
 
                         </div>
                     </div>
@@ -302,60 +299,40 @@
 
 
 
-        <div class="container py-5">
+        <div class="container">
 
             <div class="table-responsive table-s ">
-                <table class="table table-striped" >
+                <table class="table custTable table-striped" >
                     <thead>
                         <tr>
                             <th>
                                 <div class="d-flex align-items-center gap-3">
-                                    <span>S.No</span>
+                                    <span class="label-bold">S.No</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
                             <th>
                                 <div class="d-flex align-items-center gap-3">
-                                    <span>Order ID</span>
+                                    <span class="label-bold">Order ID</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
                             <th>
                                 <div class="d-flex align-items-center gap-3">
-                                    <span>Paper Topic</span>
+                                    <span class="label-bold">Paper Topic</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
                             <th>
                                 <div class="d-flex align-items-center gap-3">
-                                    <span>Type</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Citing 
-                                        Style</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Academic
-                                        Level</span>
-                                    <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                </div>
-                            </th>
-                            <th>
-                                <div class="d-flex align-items-center gap-3">
-                                    <span>Awarded
+                                    <span class="label-bold">No of 
                                         Words</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
                             <th>
                                 <div class="d-flex align-items-center gap-3">
-                                    <span>Deadline</span>
+                                    <span class="label-bold">Posting Date</span>
                                     <img src="./assets/images/icons/sort.png" width="15" height="15" alt="" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 </div>
                             </th>
@@ -364,127 +341,110 @@
                     <tbody class="overflow-auto">
                       <tr>
                         <td>1</td>
-                        <td>2022-10-3461</td>
-                        <td>Annual Assessment of Progress (AAP)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
+                        <td>
+                            <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                        </td>
+                        <td>Final Thesis DBA</td>
                         <td>3500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
+                            2025-02-03
                         </td>
                       </tr>
-
                       <tr>
                         <td>2</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation 
-                            Proposal</td>
-                        <td>Harvard</td>
-                        <td>Masters</td>
+                        <td>
+                            <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                        </td>
+                        <td>Understanding Management</td>
                         <td>3500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
+                            2025-02-03
                         </td>
                       </tr>
-
-
                       <tr>
                         <td>3</td>
-                        <td>2022-10-3461</td>
+                        <td>
+                            <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                        </td>
                         <td>DB5000 DBA Thesis</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
                         <td>2700</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
+                            2025-02-03                              
                         </td>
                       </tr>
-
-
                       <tr>
                         <td>4</td>
-                        <td>2022-10-3461</td>
-                        <td>J23 PL7542 Intelligence Failure (Activity 6)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
+                        <td>
+                            <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                        </td>
+                        <td>DB5000 DBA Thesis</td>
                         <td>2700</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
+                            2025-02-03                             
                         </td>
                       </tr>
-
-
-
                       <tr>
                         <td>5</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation</td>
-                        <td>Harvard</td>
-                        <td>Undergraduate</td>
+                        <td><a href="order.detail.html" class="text-decoration-none">1970-01-228</a></td>
+                        <td>DB5000 DBA Thesis</td>
                         <td>1500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
+                            2025-02-03                            
                         </td>
                       </tr>
-
-
-
                       <tr>
                         <td>6</td>
-                        <td>2022-10-3461</td>
-                        <td>MN3508 High Performance Work Practices</td>
-                        <td>Dissertation</td>
-                        <td>Harvard</td>
-                        <td>Undergraduate</td>
+                        <td>
+                            <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                        </td>
+                        <td>MN2511-HRM in practice</td>
                         <td>1500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
+                            2025-02-03                            
                         </td>
                       </tr>
-
-
                       <tr>
                         <td>7</td>
-                        <td>2022-10-3461</td>
-                        <td>Annual Assessment of Progress (AAP)</td>
-                        <td>Assignment</td>
-                        <td>Harvard</td>
-                        <td>PHD</td>
-                        <td>3500</td>
                         <td>
-                            <div class="d-flex flex-column align-items-center gap-0">
-                                <P class="p-0 m-0">2025-02-03</P>
-                                <P class="p-0 m-0 sm-text">(05:00:00 am)</P>
-                            </div>
+                            <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                        </td>
+                        <td>MN2511-HRM in practice</td>
+                        <td>1500</td>
+                        <td>
+                            2025-02-03
                         </td>
                       </tr>
-
-
-
-                      
+                      <tr>
+                        <td>8</td>
+                        <td><a href="order.detail.html" class="text-decoration-none">1970-01-228</a></td>
+                        <td>MN2511-HRM in practice</td>
+                        <td>1500</td>
+                        <td>
+                            2025-02-03                           
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                       <td>
+                        <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                       </td>
+                        <td>MN2511-HRM in practice</td>
+                        <td>1500</td>
+                        <td>
+                            2025-02-03                              
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                       <td>
+                        <a href="order.detail.html" class="text-decoration-none">1970-01-228</a>
+                       </td>
+                        <td>MN2511-HRM in practice</td>
+                        <td>1500</td>
+                        <td>
+                            2025-02-03                              
+                        </td>
+                      </tr>
                     </tbody>
                 </table>
                 <div class="d-flex justify-content-center py-2">
@@ -511,13 +471,7 @@
                       </nav>
                 </div>
             </div>
-
-
-
-
         </div>
-
-        
     </div>
 </div>
 
@@ -619,53 +573,6 @@
     </div>
   </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('myChart');
-
-    new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ["Total", 'Remaining', 'Achieved'],
-            datasets: [{
-                data: [123434, 12389, 12343],
-                backgroundColor: ['#0077B6', '#00B4D8', '#00B4D8'], // Customize colors
-                borderColor: ['white', 'white', 'white'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    position: 'right',
-                    labels: {
-                        usePointStyle: true,
-                        pointStyle: 'circle',
-                        font: { size: 14 },
-                        generateLabels: (chart) => {
-                            // ✅ Custom legend labels with values
-                            const dataset = chart.data.datasets[0];
-                            return chart.data.labels.map((label, i) => ({
-                                text: `${label}: ${dataset.data[i]}`, // Add values to legend
-                                fillStyle: dataset.backgroundColor[i],
-                                strokeStyle: dataset.borderColor[i],
-                                pointStyle: 'circle'
-                            }));
-                        }
-                    }
-                },
-                datalabels: {
-                    color: 'white', // ✅ Display values inside chart
-                    font: { weight: 'bold', size: 14 },
-                    anchor: 'center',
-                    align: 'center',
-                    formatter: (value) => value
-                }
-            }
-        }
-    });
-</script>
 <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
 <script src="assets/js/app.js"></script>
 <script>
