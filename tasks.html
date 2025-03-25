@@ -214,7 +214,7 @@
             <header>
                 <nav class="navbar navbar-expand-lg py-2">
                     <div class="container-fluid">
-                        <button class="btn btn-dark" id="sidebarCollapse">
+                        <button class="btn btn-light" id="toggleSidebar">
                             <i class="fas fa-bars"></i>
                         </button>
 
@@ -223,7 +223,7 @@
                                 <img src="./assets/images/icons/notification.png" width="24" height="24" alt="">
                             </div>
                             <div class="">
-                                <a href="" class="">
+                                <a href="announcements.html" class="">
                                     <i class="bi bi-megaphone" style="font-size: 23px;"></i>
                                 </a>
                             </div>
@@ -250,10 +250,10 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#profileModal">
+                                            <a class="dropdown-item" href="#">
                                                 <img src="./assets/images/icons/logout.png" width="24" height="24" alt="">
                                                 <span>Logout</span>
-                                            </button>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -924,6 +924,23 @@
         
         console.log('Content saved:', content);
     }
+</script>
+<script>
+  document.addEventListener('click', function (e) {
+      const sidebar = document.getElementById('sidebar');
+document.getElementById('toggleSidebar').addEventListener('click', function () {
+  sidebar.classList.toggle('active');
+});
+
+      if (
+          window.innerWidth <= 768 &&
+          !document.getElementById('sidebar').contains(e.target) &&
+          !document.getElementById('toggleSidebar').contains(e.target)
+      ) {
+      sidebar.classList.remove('active');
+  }
+  });
+
 </script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
