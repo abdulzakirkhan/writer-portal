@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Writer's Portal</title>
+    <title>Account Setting || Writer's Portal</title>
     <link href="assets/style/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style/style.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -12,6 +12,31 @@
     <!-- Google Material Icons CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <style>
+        .bi-megaphone{
+            color: #90E0EF !important;
+        }
+        .nav-link.active{
+            color: #0077B6 !important;
+            background: transparent !important;
+            border: none;
+            
+        }
+        .nav-link{
+            color: #727272;
+        }
+        .fade.show,.fade.show.active{
+            background: transparent !important;
+        }
+        .w-60{
+            width: 60%;
+        }
+        .rounded{
+            border-radius: 18px !important;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -32,7 +57,7 @@
         
         <ul class="list-unstyled components">
             <div class="py-3 px-3">
-                <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2 active">
+                <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
                     <img src="./assets/images/icons/dashboard-active.png" width="24" height="24" class="img-fluid" alt="">
                     <span>Dashboard</span>
                 </a>
@@ -84,7 +109,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="add-file-content.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
+                    <a href="/index.html" class="d-flex align-items-center gap-4 label text-decoration-none text-dark py-2-5 px-2">
                         <img src="./assets/images/icons/file-content.png" width="24" height="24" class="img-fluid" alt="">
                         <span>Add File Content</span>
                     </a>
@@ -171,7 +196,7 @@
                 <h3 class="body2 textt-primary fw-bold">INFORMATION</h3>
 
                 <li class="m-0 py-0">
-                    <a class="dropdown-item my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="policies.html">
+                    <a class="dropdown-item active my-0 d-flex align-items-center gap-4 label text-decoration-none text-dark py-2 px-2" href="policies.html">
                         <img src="./assets/images/icons/policy.png" width="18" height="22" alt="">
                         <span>Policies</span>
                     </a>
@@ -249,223 +274,111 @@
 
             <div class="container-fluid my-4">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2 class="heading3">Dashboard</h2>
-                    <div class="d-flex align-items-center gap-4">
-                        <button class="btn px-4 py-2 bg-cyan text-white">Mark lunch</button>
-                        <button class="btn px-4 py-2 bg-deep-sky text-white">Generate Ticket</button>
-                    </div>
-                </div>
-
-
-
-                <div class="cards py-4">
-                    <div class="row g-2">
-                        <div class="col-md-3">
-                            <div class="card custBorder">
-                                <div class="card-body d-flex justify-content-between">
-                                    <div class="">
-                                        <h3 class="subtitle-bold text-muted">Total Orders</h3>
-                                        <h1 class="textt-primary">100</h1>
-                                    </div>
-                                    <div class="">
-                                        <img src="./assets/images/icons/active-orders.png" class="img-fluid" width="50"  alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card custBorder">
-                                <div class="card-body d-flex justify-content-between">
-                                    <div class="">
-                                        <h3 class="subtitle-bold text-muted">Ongoing Orders</h3>
-                                        <h1 class="textt-primary text-yellow">05</h1>
-                                    </div>
-                                    <div class="">
-                                        <img src="./assets/images/icons/ongoing-orders.png" class="img-fluid" width="50"  alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="card custBorder">
-                                <div class="card-body d-flex justify-content-between">
-                                    <div class="">
-                                        <h3 class="subtitle-bold text-muted">Completed</h3>
-                                        <h1 class="text-greenn">90</h1>
-                                    </div>
-                                    <div class="">
-                                        <img src="./assets/images/icons/completed.png" class="img-fluid" width="50"  alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="card custBorder">
-                                <div class="card-body d-flex justify-content-between">
-                                    <div class="">
-                                        <h3 class="subtitle-bold text-muted">Rejected</h3>
-                                        <h1 class="text-red">04</h1>
-                                    </div>
-                                    <div class="">
-                                        <img src="./assets/images/icons/rejected-ac.png" class="img-fluid" width="50"  alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="cards">
-                    <div class="row g-3">
-                        <div class="col-md-3">
-                            <div class="card chart r-3 rounded-3 bg-transparent border-top-0">
-                                <div class="card-header r-3 pt-3" style="background-color: #0077B6;">
-                                    <p class="text-white body2-bold m-0">Orders</p>
-                                </div>
-                                <div class="card-body px-3">
-                                    <h4 class="body1-bold">Current Month Orders</h4>
-                                    <div class="border-bottom mb-3 border-2 pb-3 d-flex flex-column gap-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span>Total</span>
-                                            <span>100</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span>Completed</span>
-                                            <span>90</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span>Remaining</span>
-                                            <span>09</span>
-                                        </div>
-                                    </div>
-
-                                    <h4 class="body1-bold">Last 4 Month Orders</h4>
-                                    <div class="d-flex flex-column gap-3">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span>Total</span>
-                                            <span>200</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span>Completed</span>
-                                            <span>190</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <span>Remaining</span>
-                                            <span>10</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card r-3 rounded-3 bg-transparent border-top-0 chart">
-                                <div class="card-header r-3 pt-3" style="background-color: #0077B6;">
-                                    <p class="text-white body2-bold m-0">Writer Productivity</p>
-                                </div>
-
-                                <div class="card-body p-0 d-flex justify-content-center align-items-center">
-                                    <canvas id="myChart" class="h-400" ></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 d-flex flex-column gap-4">
-                            <div class="card red-card r-3 ">
-                                <div class="card-body p-3">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h6 class="subtitle-bold">Your Penalty</h6>
-                                        <div class="" style="width: 24px;">
-                                            <img src="./assets/images/icons/flow.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="" style="width: 95px;height: 95px;">
-                                            <img src="./assets/images/icons/Wallet.png" class="img-fluid" alt="">
-                                        </div>
-                                        <div class="">
-                                            <span class="title-bold text-grey">R.S</span>
-                                            <span class="title-bold text-red">1,100</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card yellow-card r-3 ">
-                                <div class="card-body p-3">
-                                    <h6 class="subtitle-bold text-center">Cancel Orders</h6>
-                                    <div class="py-2">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="body2">Last 6 Months</p>
-                                            <span class="border-bottom border-dark">
-                                                1
-                                            </span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="body2">Academic</p>
-                                            <span class="border-bottom border-dark">
-                                                0
-                                            </span>
-                                        </div>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="body2">LG</p>
-                                            <span class="border-bottom border-dark">
-                                                1
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row py-3 px-3 mt-3">
-                        <div class="card p-0 borders-top-radius">
-                            <div class="card-header r-3 py-3" style="background-color: #0077B6;">
-                                <p class="text-white body2-bold m-0">Benchmark</p>
-                            </div>
-                            <div class="card-body  border-22 p-3 d-flex">
-                                <div class="w-50 d-flex flex-column gap-2 border-end pe-2 border-2">
-                                    <h3 class="body1-bold">Current Month Benchmark</h3>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="body2">Total</span>
-                                        <span class="body1 text-deep-sky">48000</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="body2">Completed</span>
-                                        <span class="body1 text-deep-sky">76500</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="body2">Remaining</span>
-                                        <span class="body1 text-deep-sky">-28500</span>
-                                    </div>
-                                </div>
-                                <div class="w-50 d-flex px-4 flex-column gap-2">
-                                    <h3 class="body1-bold">Last 4 Month Benchmark</h3>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="body2">Total</span>
-                                        <span class="body1 text-deep-sky">192000</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="body2">Completed</span>
-                                        <span class="body1 text-deep-sky">362650</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="body2">Remaining</span>
-                                        <span class="body1 text-deep-sky">-170650</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h2 class="heading3">Account Settings</h2>
                 </div>
             </div>
+        </div>
 
 
-    </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs border-0 justify-content-center align-items-center gap-2" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link body1-bold active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                        </li>
+                        <div style="width: 1px; height: 30px; background-color: #A7A4A9;"></div>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link body1-bold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Update Password</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content border-0" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="container mt-4 d-flex justify-content-center align-items-center">
+                                <div class="card border border-2 rounded w-60">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="profile d-flex align-items-center gap-3">
+                                            <div class="" style="width: 80px; height: 80px;">
+                                                <img src="./assets/images/profile.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="name mt-3" >
+                                                <p class="body2 text-dark m-0">Michael Mark</p>
+                                                <p class="body1-bold text-dark">EG-84</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <button class="text-white btn bgg-primay">
+                                                <img src="./assets/images/edit.png" width="24" height="24" alt="">
+                                                Edit
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="input-containerr col-md-6">
+                                                <input type="text" id="hourse" value="Michael" class="text-grey" required>
+                                                <label for="hourse">First Name</label>
+                                            </div>
+                                            <div class="input-containerr col-md-6">
+                                                <input type="text" id="hourse" value="Mark" class="text-grey" required>
+                                                <label for="hourse">Last Name</label>
+                                            </div>
+                                            <div class="input-containerr col-md-12">
+                                                <input type="text" id="hourse" value="john@gmail.com" class="text-grey" required>
+                                                <label for="hourse">Email address</label>
+                                            </div>
+                                            <div class="input-containerr col-md-12">
+                                                <input type="text" id="hourse" value="+923001234567" class="text-grey" required>
+                                                <label for="hourse">Phone No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="container mt-4 d-flex flex-column justify-content-center align-items-center">
+                                <h1 class="subtitle-bold w-60 text-dark text-start">Change Password</h1>
+                                <div class="card border border-2 rounded w-60">
+                                    <div class="card-body">
+                                        <div class="row g-3">
+                                            <div class="input-containerr col-md-12">
+                                                <input type="password" id="hourse" value="**********" class="text-grey" required>
+                                                <label for="hourse">Old Password</label>
+                                            </div>
+
+                                            <h1 class="body1-bold text-dark">New Password</h1>
+                                            <div class="input-containerr col-md-6">
+                                                <input type="password" id="hourse" value="Mark" class="text-grey" required>
+                                                <label for="hourse">New Password</label>
+                                            </div>
+                                            <div class="input-containerr col-md-12">
+                                                <input type="password" id="hourse" value="john@gmail.com" class="text-grey" required>
+                                                <label for="hourse">Re-enter New Password</label>
+                                            </div>
+                                            <div class="d-flex justify-content-end align-items-center">
+                                                <button class="text-white bgg-primay btn">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </div>
+
+
+
+</button>
+
+
+
 
 
 <!-- Modal -->
@@ -484,53 +397,8 @@
       </div>
     </div>
   </div>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('myChart');
 
-    new Chart(ctx, {
-        type: 'pie',
-        data: {
-            labels: ["Total", 'Remaining', 'Achieved'],
-            datasets: [{
-                data: [123434, 12389, 12343],
-                backgroundColor: ['#0077B6', '#00B4D8', '#00B4D8'], // Customize colors
-                borderColor: ['white', 'white', 'white'],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            plugins: {
-                legend: {
-                    position: 'right',
-                    labels: {
-                        usePointStyle: true,
-                        pointStyle: 'circle',
-                        font: { size: 14 },
-                        generateLabels: (chart) => {
-                            // ✅ Custom legend labels with values
-                            const dataset = chart.data.datasets[0];
-                            return chart.data.labels.map((label, i) => ({
-                                text: `${label}: ${dataset.data[i]}`, // Add values to legend
-                                fillStyle: dataset.backgroundColor[i],
-                                strokeStyle: dataset.borderColor[i],
-                                pointStyle: 'circle'
-                            }));
-                        }
-                    }
-                },
-                datalabels: {
-                    color: 'white', // ✅ Display values inside chart
-                    font: { weight: 'bold', size: 14 },
-                    anchor: 'center',
-                    align: 'center',
-                    formatter: (value) => value
-                }
-            }
-        }
-    });
-</script>
+
 <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
 <script src="assets/js/app.js"></script>
 <script>
